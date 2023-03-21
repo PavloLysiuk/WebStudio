@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-GOIT Homework 6. Forms.
+# goit-markup-hw-07
+GOIT Homework 7. Adaptive layout.
