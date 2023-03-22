@@ -9,7 +9,6 @@
   --cloud: #f4f4fd;
   --dairy: #fcfcfc;
   --white: #ffffff;
-  --transparent-white: rgba(255, 255, 255, 0.1);
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
   --navy-blue-modal-button: rgba(46, 47, 66, 0.1);
   --navy-blue-modal-input: rgba(46, 47, 66, 0.2);
@@ -642,7 +641,7 @@ a {
   height: 40px;
 
   fill: var(--cloud);
-  background-color: var(--transparent-white);
+  background-color: var(--iris);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -651,7 +650,6 @@ a {
 }
 
 .footer-social-link:is(:hover, :focus) {
-  outline: none;
   background-color: var(--green);
 }
 
