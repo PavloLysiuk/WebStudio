@@ -7,6 +7,7 @@
   --light-slate: #8e8f99;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
+  --dairy: #fcfcfc;
   --white: #ffffff;
   --transparent-white: rgba(255, 255, 255, 0.1);
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
@@ -760,7 +761,7 @@ a {
   width: 408px;
   padding: 72px 24px 24px;
 
-  background-color: var(--white);
+  background-color: var(--dairy);
   border-radius: 4px;
 
   opacity: 1;
@@ -862,6 +863,7 @@ a {
   height: 40px;
 
   color: var(--navi-blue);
+  background-color: transparent;
 
   border: 1px solid var(--navy-blue-modal-input);
   border-radius: 4px;
@@ -892,6 +894,7 @@ a {
   resize: none;
 
   color: var(--navi-blue);
+  background-color: transparent;
 
   border: 1px solid var(--navy-blue-modal-input);
   border-radius: 4px;
