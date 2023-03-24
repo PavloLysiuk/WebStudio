@@ -246,11 +246,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--element-gap);
-  row-gap: calc(var(--element-gap) * 3);
 }
 
 .feature-item {
-  width: 264px;
+  width: calc((100% - (var(--element-gap) * 3)) / 4);
 }
 
 .feature-icon-bg {
@@ -302,10 +301,11 @@ a {
 .services-list {
   display: flex;
   margin-top: 72px;
-  gap: var(--element-gap);
+  column-gap: var(--element-gap);
 }
 
 .services-item {
+  width: calc((100% - (var(--element-gap) * 2)) / 3);
   border: 1px solid var(--cornflower);
 }
 
@@ -496,9 +496,14 @@ a {
 
 /** ---- Card ---- */
 
+.portfolio-item {
+  width: calc((100% - (var(--element-gap) * 2)) / 3);
+}
+
 .portfolio-link {
   display: block;
-  width: 360px;
+  width: 100%;
+  height: 100%;
 
   background-color: var(--white);
 
@@ -605,7 +610,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--cloud);
+  color: var(--white);
 }
 
 .social-content {
@@ -648,7 +653,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--cloud);
+  color: var(--white);
 }
 
 .subscribe-input {
@@ -949,8 +954,8 @@ a {
 
 .submit-button {
   display: block;
-  margin-top: var(--element-gap);
   margin: 0 auto;
+  margin-top: var(--element-gap);
   padding: 16px 32px;
   width: 169px;
 }
