@@ -617,32 +617,48 @@ a {
 
 /**--------------------- Team ---------------------*/
 
-.team {
-  padding: 120px 0;
-  max-width: 100%;
+@media screen and (min-width: 428px) {
+  .team {
+    padding: 96px 0;
+    max-width: 100%;
 
-  background-color: var(--cloud);
+    background-color: var(--cloud);
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 72px;
+    column-gap: var(--element-gap);
+    row-gap: calc(var(--element-gap) * 3);
+  }
+
+  .team-title {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--navi-blue);
+  }
 }
 
-.team-title {
-  text-align: center;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-
-  color: var(--navi-blue);
+@media screen and (min-width: 768px) {
+  .team-list {
+    margin-top: 72px;
+    column-gap: var(--element-gap);
+    row-gap: 64px;
+  }
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 72px;
-  column-gap: var(--element-gap);
-  row-gap: calc(var(--element-gap) * 3);
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 120px 0;
+  }
 }
 
 /** ---- Card ---- */
