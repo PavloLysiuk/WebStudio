@@ -489,8 +489,7 @@ a {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  and (min-width: 1200px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
@@ -500,16 +499,61 @@ a {
 
 /**--------------------- Feature ---------------------*/
 
+.features {
+  padding: 96px 0;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--element-gap) * 3);
+}
+
+.feature-icon-bg {
+  display: none;
+}
+
+.feature-title {
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navi-blue);
+}
+
+.feature-text {
+  margin-top: 8px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--element-gap);
+  }
+
+  .feature-item {
+    width: calc((100% - var(--element-gap)) / 2);
+  }
+
+  .feature-title {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .features {
     padding: 120px 0;
   }
 
   .features-list {
-    display: flex;
-    flex-wrap: wrap;
     column-gap: var(--element-gap);
-    row-gap: calc(var(--element-gap) * 3);
   }
 
   .feature-item {
@@ -532,15 +576,6 @@ a {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-
-    color: var(--navi-blue);
-  }
-
-  .feature-text {
-    margin-top: 8px;
-
-    line-height: 1.5;
     letter-spacing: 0.02em;
   }
 }
