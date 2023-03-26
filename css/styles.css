@@ -96,7 +96,7 @@ a {
     padding: 0 16px;
     max-width: 428px;
 
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
   }
 }
 
@@ -910,18 +910,6 @@ a {
 
 .portfolio-link:is(:hover, :focus) .overlay {
   transform: translateY(0);
-}
-
-@media screen and (max-width: 1199px) {
-  .portfolio-list {
-    margin-top: 64px;
-    margin-top: calc(var(--element-gap) * 2);
-    row-gap: calc(var(--element-gap) * 3);
-  }
-
-  .portfolio-item {
-    max-width: 356px;
-  }
 }
 
 /**--------------------- Footer ---------------------*/
