@@ -59,6 +59,8 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1158px;
+
+  outline: 1px solid tomato;
 }
 
 .visually-hidden {
@@ -96,7 +98,7 @@ a {
 
 /**--------------------- Media Query ---------------------*/
 
-@media (min-width: 428px) and (max-width: 767px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .container {
     margin: 0 auto;
     padding: 0 16px;
@@ -104,7 +106,7 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     margin: 0 auto;
     padding: 0 16px;
@@ -112,7 +114,7 @@ a {
   }
 }
 
-@media (min-width: 1200) {
+@media screen and (min-width: 1200) {
 }
 
 /**--------------------- Header ---------------------*/
@@ -193,12 +195,29 @@ a {
   border-radius: 2px;
 }
 
-@media (max-width: 767px) {
-  .header {
+@media screen and (max-width: 767px) {
+  .header-nav {
     display: none;
   }
 }
 
+/**-------- Mobile Nav --------*/
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.burger-menu-icon {
+  fill: var(--navi-blue);
+}
 /**--------- Contacts ----------*/
 
 .header-contacts {
@@ -263,13 +282,13 @@ a {
   padding: 16px 32px;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding: 112px 0;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero-title {
     max-width: 320px;
     font-size: 36px;
@@ -322,7 +341,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .features {
     padding: 96px 0;
   }
@@ -348,7 +367,7 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .feature-item {
     width: 100%;
   }
@@ -391,7 +410,7 @@ a {
   border: 1px solid var(--cornflower);
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .services {
     display: none;
   }
@@ -536,13 +555,13 @@ a {
   border: 1px solid var(--ocean);
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .customers {
     padding: 96px 0;
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .customers-list {
     column-gap: 16px;
   }
@@ -552,7 +571,7 @@ a {
   }
 }
 
-@media (max-width: 427px) {
+@media screen and (max-width: 427px) {
   .customers-item {
     width: calc((100% - 32px) / 2);
   }
@@ -561,7 +580,7 @@ a {
 /**--------------------- Portfolio ---------------------*/
 
 .portfolio {
-  padding: 96px 0 120px;
+  padding: 100px 0 120px;
 }
 
 /** ---- Filter ---- */
@@ -611,7 +630,7 @@ a {
 /** ---- Card ---- */
 
 .portfolio-item {
-  width: calc((100% - (var(--element-gap) * 2)) / 3);
+  width: 360px;
 }
 
 .portfolio-link {
@@ -674,12 +693,24 @@ a {
   color: var(--cloud);
   background-color: var(--iris);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition);
 }
 
 .portfolio-link:is(:hover, :focus) .overlay {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-list {
+    margin-top: 64px;
+    margin-top: calc(var(--element-gap) * 2);
+    row-gap: calc(var(--element-gap) * 3);
+  }
+
+  .portfolio-item {
+    max-width: 356px;
+  }
 }
 
 /**--------------------- Footer ---------------------*/
@@ -834,7 +865,7 @@ a {
   transform: translateY(-50%);
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer-flex.container {
     margin: 0 auto;
     padding: 0 16px;
@@ -855,7 +886,7 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-flex.container {
     margin: 0 auto;
     padding: 0 16px;
