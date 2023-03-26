@@ -28,8 +28,6 @@
     <!-- Header -->
 
     <header class="header">
-      <!-- Navigation -->
-
       <div class="header-nav container">
         <a class="header-logo" href="./index.html"><span>Web</span>Studio</a>
         <nav class="nav">
@@ -39,8 +37,6 @@
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
-
-        <!-- Contants -->
 
         <address class="header-contacts">
           <ul class="contact-list">
@@ -54,26 +50,98 @@
         </address>
       </div>
 
-      <!-- Mobile Nav -->
-
       <div class="mobile-nav container">
         <a class="header-logo" href="./index.html"><span>Web</span>Studio</a>
-        <svg class="burger-menu-button" width="32" height="32">
+        <button
+        class="mobile-menu-open-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+        >
+        <svg class="mobile-menu-icon-open" width="32" height="32">
           <use href="./images/icons.svg#burger"></use>
         </svg>
+            </button>
       </div>
+
+      <div class="mobile-menu-container js-menu-container" id="mobile-menu-list"">
+
+        <button class="mobile-menu-close-btn js-close-menu">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link">Studio</a></li>
+          <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link">Portfolio</a></li>
+          <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link">Contacts</a></li>
+        </ul>
+
+        <div class="mobile-content-wrapper">
+          <address class="mobile-contacts">
+            <a class="mobile-contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="mobile-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </address>
+
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
     </header>
 
     <!-- Main -->
 
-    <main>
-      <!-- Portfolio  -->
-
+    <!-- <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-
-          <!-- Filter -->
 
           <ul class="filter-list">
             <li class="filter-item">
@@ -96,8 +164,6 @@
               <button class="filter-button" type="button">Marketing</button>
             </li>
           </ul>
-
-          <!-- Cards -->
 
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -318,11 +384,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-flex container">
         <div class="left-content">
           <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
@@ -385,6 +451,16 @@
           </button>
         </form>
       </div>
-    </footer>
-  </body>
+    </footer> -->
+    
+    <!-- Scripts -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+</body>
 </html>
