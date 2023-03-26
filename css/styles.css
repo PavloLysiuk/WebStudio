@@ -259,7 +259,7 @@ a {
   text-align: center;
 
   background-color: var(--navi-blue);
-  background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-img.jpg);
+  background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero/backgroung-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
