@@ -258,7 +258,7 @@ a {
     padding: 0 16px;
     max-width: 100%;
     max-width: 428px;
-    height: 100vh;
+    height: 100%;
   }
 
   .mobile-nav {
