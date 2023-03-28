@@ -1153,9 +1153,12 @@ a {
     text-align: center;
   }
 
+  .subscribe-form {
+    width: 396px;
+  }
+
   .subscribe-input {
     width: 100%;
-    max-width: 396px;
   }
 
   .subsctibe-button {
