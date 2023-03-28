@@ -307,7 +307,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 80px 10px 40px 40px;
+    padding: 80px 40px 40px 40px;
   }
 
   .mobile-menu-close-btn {
@@ -375,7 +375,7 @@ a {
 
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.11;
 
     letter-spacing: 0.02em;
@@ -399,8 +399,8 @@ a {
 
   .mobile-social-list {
     display: flex;
+    justify-content: space-between;
     margin-top: 48px;
-    gap: 56px;
   }
 
   .mobile-social-link {
@@ -423,9 +423,12 @@ a {
 }
 
 @media screen and (max-width: 427px) {
-  .mobile-menu-link,
-  .mobile-contacts-tel {
+  .mobile-menu-link {
     font-size: calc(100vw / 428 * 36);
+  }
+
+  .mobile-contacts-tel {
+    font-size: calc(100vw - 92.4vw);
   }
 }
 
@@ -837,7 +840,6 @@ a {
   flex-wrap: wrap;
   column-gap: var(--element-gap);
   row-gap: 16px;
-  max-width: 270px;
 }
 
 .filter-button {
@@ -940,6 +942,19 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+
+  .filter-button {
+    padding: 8px 12px;
+
+    font-size: 12px;
+  }
+
   .portfolio-item:not(:first-child) {
     margin-top: 48px;
   }
