@@ -57,15 +57,14 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
           type="button"
-          >
+        >
           <svg class="mobile-menu-icon-open" width="32" height="32">
             <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu-container js-menu-container" id="mobile-menu-list"">
-
+      <div class="mobile-menu-container js-menu-container" id="mobile-menu-list">
         <div class="mobile-container mobile-menu-wrapper">
           <button class="mobile-menu-close-btn js-close-menu">
             <svg class="mobile-menu-close-icon" width="8" height="8">
@@ -81,61 +80,43 @@
             </ul>
           </nav>
 
-            <address class="mobile-contacts">
-              <a class="mobile-contacts-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
-              <a class="mobile-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </address>
-            
-            <ul class="mobile-social-list">
-              <li class="mobile-social-item">
-                <a
-                  class="mobile-social-link"
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-social-item">
-                <a class="mobile-social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-social-item">
-                <a
-                  class="mobile-social-link"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-social-item">
-                <a
-                  class="mobile-social-link"
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <address class="mobile-contacts">
+            <a class="mobile-contacts-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="mobile-contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </address>
+
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-
-
       </div>
-
     </header>
 
     <!-- Main -->
@@ -223,44 +204,19 @@
           <h2 class="service-title">What are we doing</h2>
           <ul class="services-list">
             <li class="services-item">
-                <picture>
-                  <source
-                  media="(min-width: 1200px)"
-                  srcset="./images/services/img_1-desktop.webp 1x,
-                  ./images/services/img_1-desktop-@2x.webp 2x"
-                  type="image/webp" />
-
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./images/services/img_1-desktop.jpg 1x,
-                  ./images/services/img_1-desktop-@2x.jpg 2x" />
-
-                  <img
-                  src="./images/services/img_1.jpg"
-                  alt="monitor"
-                  width="360"
-                  height="300" />
-                </picture>
-            </li>
-
-            <li class="services-item">
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/services/img_2-desktop.webp 1x,
-                  ./images/services/img_2-desktop-@2x.webp 2x"
-                  type="image/webp" />
+                  srcset="./images/services/img_1-desktop.webp 1x, ./images/services/img_1-desktop-@2x.webp 2x"
+                  type="image/webp"
+                />
 
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/services/img_2-desktop.jpg 1x,
-                  ./images/services/img_2-desktop-@2x.jpg 2x" />
+                  srcset="./images/services/img_1-desktop.jpg 1x, ./images/services/img_1-desktop-@2x.jpg 2x"
+                />
 
-                <img
-                src="./images/services/img_2.jpg"
-                alt="app"
-                width="360"
-                height="300" />
+                <img src="./images/services/img_1.jpg" alt="monitor" width="360" height="300" />
               </picture>
             </li>
 
@@ -268,20 +224,33 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/services/img_3-desktop.webp 1x,
-                  ./images/services/img_3-desktop-@2x.webp 2x"
-                  type="image/webp" />
+                  srcset="./images/services/img_2-desktop.webp 1x, ./images/services/img_2-desktop-@2x.webp 2x"
+                  type="image/webp"
+                />
 
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images/services/img_3-desktop.jpg 1x,
-                  ./images/services/img_3-desktop-@2x.jpg 2x" />
+                  srcset="./images/services/img_2-desktop.jpg 1x, ./images/services/img_2-desktop-@2x.jpg 2x"
+                />
 
-                <img
-                src="./images/services/img_3.jpg"
-                alt="phone"
-                width="360"
-                height="300" />
+                <img src="./images/services/img_2.jpg" alt="app" width="360" height="300" />
+              </picture>
+            </li>
+
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/services/img_3-desktop.webp 1x, ./images/services/img_3-desktop-@2x.webp 2x"
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/services/img_3-desktop.jpg 1x, ./images/services/img_3-desktop-@2x.jpg 2x"
+                />
+
+                <img src="./images/services/img_3.jpg" alt="phone" width="360" height="300" />
               </picture>
             </li>
           </ul>
@@ -297,11 +266,12 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-              srcset="./images/team/mark_guerrero-desktop-@2x.jpg 2x"
-              src="./images/team/mark_guerrero.jpg"
-              alt="employee photo"
-              width="264"
-              height="260" />
+                srcset="./images/team/mark_guerrero-desktop-@2x.jpg 2x"
+                src="./images/team/mark_guerrero.jpg"
+                alt="employee photo"
+                width="264"
+                height="260"
+              />
 
               <div class="team-content">
                 <h3 class="employee-title">Mark Guerrero</h3>
@@ -361,11 +331,12 @@
 
             <li class="team-item">
               <img
-              srcset="./images/team/tom_ford-desktop-@2x.jpg 2x"
-              src="./images/team/tom_ford.jpg"
-              alt="employee photo"
-              width="264"
-              height="260" />
+                srcset="./images/team/tom_ford-desktop-@2x.jpg 2x"
+                src="./images/team/tom_ford.jpg"
+                alt="employee photo"
+                width="264"
+                height="260"
+              />
 
               <div class="team-content">
                 <h3 class="employee-title">Tom Ford</h3>
@@ -425,11 +396,12 @@
 
             <li class="team-item">
               <img
-              srcset="./images/team/camila_garcia-desktop-@2x.jpg"
-              src="./images/team/camila_garcia.jpg"
-              alt="employee photo"
-              width="264"
-              height="260" />
+                srcset="./images/team/camila_garcia-desktop-@2x.jpg"
+                src="./images/team/camila_garcia.jpg"
+                alt="employee photo"
+                width="264"
+                height="260"
+              />
 
               <div class="team-content">
                 <h3 class="employee-title">Camila Garcia</h3>
@@ -489,11 +461,12 @@
 
             <li class="team-item">
               <img
-              srcset="./images/team/daniel_wilson-desktop-@2x.jpg"
-              src="./images/team/daniel_wilson.jpg"
-              alt="employee photo"
-              width="264"
-              height="260" />
+                srcset="./images/team/daniel_wilson-desktop-@2x.jpg"
+                src="./images/team/daniel_wilson.jpg"
+                alt="employee photo"
+                width="264"
+                height="260"
+              />
 
               <div class="team-content">
                 <h3 class="employee-title">Daniel Wilson</h3>
@@ -664,7 +637,7 @@
 
         <form class="subscribe-form">
           <p class="subscribe-title">Subscribe</p>
-          
+
           <label>
             <input class="subscribe-input" type="email" name="email" placeholder="E-mail" required />
           </label>
