@@ -815,7 +815,7 @@ a {
 .customers-link:is(:hover, :focus) {
   fill: var(--ocean);
   border: 1px solid var(--ocean);
-  scale: 1.05;
+  scale: 1.04;
 }
 
 @media screen and (min-width: 768px) {
