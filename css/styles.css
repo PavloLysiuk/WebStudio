@@ -761,7 +761,7 @@ a {
 
 .team-social-link:is(:hover, :focus) {
   background-color: var(--ocean);
-  scale: 1.2;
+  scale: 1.15;
 }
 
 /**--------------------- Customers---------------------*/
@@ -1079,7 +1079,7 @@ a {
 
 .footer-social-link:is(:hover, :focus) {
   background-color: var(--green);
-  scale: 1.2;
+  scale: 1.15;
 }
 
 .subscribe-title {
