@@ -139,9 +139,15 @@ a {
   text-transform: uppercase;
 
   color: var(--navi-blue);
+
+  transition: color var(--transition);
 }
 
 .header-logo span {
+  color: var(--iris);
+}
+
+.header-logo:hover {
   color: var(--iris);
 }
 
@@ -1030,9 +1036,15 @@ a {
   text-transform: uppercase;
 
   color: var(--cloud);
+
+  transition: color var(--transition);
 }
 
 .footer-logo span {
+  color: var(--iris);
+}
+
+.footer-logo:hover {
   color: var(--iris);
 }
 
